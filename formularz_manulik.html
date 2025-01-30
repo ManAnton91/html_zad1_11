@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<meta charset="UTF-8">
+<!-- Anton Manulik 2K/g1, 2024r. --> 
+<title>Formularz</title>
+</head>
+<body bgcolor="#66FFFF">
+<title>Formularz Rejestracji na Konferencję </title>
+</head>
+<body>
+<h1>Formularz Rejestracji na Konferencję</h1>
+
+<form enctype="text/plain" action="mailto:mkryniew@ids.gda.pl" subject="formularz_manulik" method="Post">
+<TABLE>
+<br><br>
+<TR height="100">
+<TD width="400"> 
+<b>Imię</b><br>
+<input type="text" name="firstname"<br><br><br>
+<b>Nazwisko</b><br>
+<input type="text" name="lastname" placeholder="Nazwisko"><br><br>
+<b>Email</b><br>
+<input type="text" name="email" placeholder="Email (max 30 znaków)" maxlength="30"><br><br>
+<b>Hasło</b><br>
+<input type="password" name="password" placeholder="Hasło"><br><br>
+<b>Phone</b><br>
+<input type="text" name="phone"><br>
+ </TD>
+<TD width="300" >
+<b>Jakie zajęcia preferujesz?</b>
+<br><br>
+<input type="checkbox" name="zajęcia" value="workshops">Warsztaty <br><br>
+<input type="checkbox" name="zajęcia" value="networking">Networking <br><br>
+<input type="checkbox" name="zajęcia" value="presentations">Prezentacje <br><br>
+<input type="checkbox" name="zajęcia" value="social_event">Wydarzenie towarzyszące <br><br>
+</div>
+</TD>
+<TD width="500">
+<b>Jaki jest Twój zawód?</b><br>
+<select>
+    <option name="zawod" value="1">Programista</option>
+    <option name="zawod" value="2">Analityk</option>
+    <option name="zawod" value="3">Menedżer</option>
+    <option name="zawod" value="4">Administrator</option>
+    <option name="zawod" value="5" selected>Inny</option>
+</select><br><br>
+<b>Edukacja?</b><br>
+<select>
+    <option name="edukacja" value="1">Studia I stopnia</option>
+    <option name="edukacja" value="2">Studia II stopnia</option>
+    <option name="edukacja" value="3">Studia magisterskie</option>
+</select><br><br>
+<b>Jakie masz doświadczenie zawodowe?</b><br>
+<select>
+    <option name="doświadczenie" value="1">0-3</option>
+    <option name="doświadczenie" value="2" selected>4-6</option>
+    <option name="doświadczenie" value="3">7-10</option>
+</select><br>
+</TD>
+</TR>
+
+<TR height="200">
+<TD>
+<b>Co chcesz zwiedzić?</b>
+<br><br>
+<input type="radio" name="sesja" value="option1">Sesja A
+<input type="radio" name="sesja" value="option2" checked>Sesja B
+<input type="radio" name="sesja" value="option3">Sesja C
+<input type="radio" name="sesja" value="option4">Sesja D
+</TD>
+<TD> 
+<b>Jaki rodzaj lunchu preferujesz?</b>
+<br><br>
+<input type="radio" name="lunch" value="option1">Standardowy
+<br><br>
+<input type="radio" name="lunch" value="option2">Wegetariański
+<br><br>
+<input type="radio" name="lunch" value="option3">Wegański
+</TD>
+<TD>
+<b>Który hotel preferujesz??</b>
+<br><br>
+<input type="radio" name="hotel" value="option1">Hotel 5*
+<input type="radio" name="hotel" value="option2">Hotel 4*
+<input type="radio" name="hotel" value="option3">Hotel 3*
+<input type="radio" name="hotel" value="option4">Apartament
+<input type="radio" name="hotel" value="option5">Hostel
+</TD>
+</TR>
+
+<TR height="200">
+<TD>
+<b>W jakie dni planujesz wizytę?</b>
+<br><br>
+<input type="checkbox" name="days[]" value="day1" checked>Dzień 1
+<input type="checkbox" name="days[]" value="day2">Dzień 2
+<input type="checkbox" name="days[]" value="day3">Dzień 3
+<input type="checkbox" name="days[]" value="day4">Dzień 4
+<input type="checkbox" name="days[]" value="day5">Dzień 5
+</TD>
+<TD>
+<b>Jaki format preferujesz?</b>
+<br><br>
+<input type="checkbox" name="format" value="audio">Audio
+<input type="checkbox" name="format" value="video">Video
+<input type="checkbox" name="format" value="no_pref"checked>Brak preferencji
+</TD>
+<TD> 
+<b>Dodatkowe uwagi:</b><br>
+<textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br><br>
+<input type="submit" value="WYŚLIJ">
+<input type="reset" value="CZYŚĆ">
+</TD>
+</TR>
+</TABLE>
+
+</form>
+<br>
+<p><a href="index.html">Powrót do strony głównej</a></p>
+</body>
+</html>
